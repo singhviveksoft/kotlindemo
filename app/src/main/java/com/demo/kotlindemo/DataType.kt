@@ -1,6 +1,6 @@
 package com.demo.kotlindemo
 
-class DataType {
+class DataType:DataItem() {
     var str=""
 
     fun issues(){
@@ -22,14 +22,20 @@ class DataType {
 
         println(float.toDouble())
         println(float.toLong())
+    }
 
+    fun max(a:Int,b:Int)= if (a>b)  a else  b  // for experssion return type not allowed
 
+    fun maximum(a:Int,b: Int):Int{
+        if (a>b) return a
+        else return b
     }
 
 
 
-
 }
+
+
 
 var i=5  //by default its takes int value. Int 32 bites
 val l:Long=1000000000L //long 64 bites
