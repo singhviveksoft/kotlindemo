@@ -1,6 +1,7 @@
 package com.demo.kotlindemo
 
 class DataType {
+    var str=""
 
     fun issues(){
         val a: Int = 100
@@ -24,6 +25,8 @@ class DataType {
 
 
     }
+
+
 
 
 }
