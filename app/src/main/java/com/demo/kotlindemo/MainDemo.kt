@@ -79,12 +79,23 @@ fun main(){
 //    i++
 //  }
 
+//-------------------------------
+
   //question to ask
   var value2= mutableSetOf<String>("gggg","lll")
- // value2+="yyyy"
+ // value2+="yyyy"   //question to ask
   value2.remove("gggg")
   value2.add("oooo")
   println(value2)
+
+
+
+
+
+
+
+
+
 }
 
 
