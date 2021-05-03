@@ -3,6 +3,19 @@ package com.demo.kotlindemo
 fun main(){
 
     val dataType=DataType()
+
+    val value=object:Abstract(){
+        override fun sum(no1: Int, nos2: Int) {
+            TODO("Not yet implemented")
+        }
+
+        override fun div(no3: Int) {
+            TODO("Not yet implemented")
+        }
+
+    }
+
+
 //    dataType.issues()
 //    dataType.expilicityConversion(22,5.69999f)
   //  dataType.str="raju"
@@ -90,7 +103,7 @@ fun main(){
 
 
 
-
+println(A.name)
 
 
 
@@ -98,7 +111,15 @@ fun main(){
 
 }
 
+object A{
+    var name="vs"
+}
 
+abstract class Abstract{
+    abstract fun sum(no1:Int,nos2:Int)
+        abstract fun div(no3:Int)
+
+}
 
 
 
