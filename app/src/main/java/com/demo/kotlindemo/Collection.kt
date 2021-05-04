@@ -54,21 +54,21 @@ fun main() {
         // set-----------------------------------------------
 
 
-//    val item= setOf(1,2,3,4,56,"yyy",7,8,9,9,null)
-//    println(item)
+    val item= setOf(1,2,3,4,56,"yyy",7,8,9,9,null)
+    println(item)
 //
-    val setItem= mutableSetOf<Int>()
-    setItem.add(5)
-    setItem.add(10)
-    setItem.add(5)
-//    println(setItem)
+//    val setItem= mutableSetOf<Int>()
+//    setItem.add(5)
+//    setItem.add(10)
+//    setItem.add(5)
+////    println(setItem)
+////
 //
-
-    when{
-        10 in setItem-> print("vivek")
-        9 in setItem-> "hello"
-
-    }
+//    when{
+//        10 in setItem-> print("vivek")
+//        9 in setItem-> "hello"
+//
+//    }
 //    print(setResult)
 
 

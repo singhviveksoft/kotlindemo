@@ -1,21 +1,10 @@
 package com.demo.kotlindemo
 
-class DataType {
-    var str=""
+class ExplicityConversion {
 
-    fun issues(){
-        val a: Int = 100
-        val boxedA: Int? = a
-        val anotherBoxedA: Int? = a
 
-        val b: Int = 10000
-        val boxedB: Int? = b
-        val anotherBoxedB: Int? = b
 
-        println(boxedA === anotherBoxedA) // true
-        println(boxedB === anotherBoxedB) // false
-    }
-
+companion object{
     fun expilicityConversion(b:Byte,float: Float){
 
         println(b.toShort())
@@ -24,15 +13,23 @@ class DataType {
         println(float.toLong())
     }
 
-    fun max(a:Int,b:Int)= if (a>b)  a else  b  // for experssion return type not allowed
+
+
+
+    fun max(a:Int,b:Int)= if (a>b)  a else  b
 
     fun maximum(a:Int,b: Int):Int{
         if (a>b) return a
         else return b
     }
 
+}
 
+}
 
+fun main(){
+   val ans: Int = ExplicityConversion.max(18,15)
+    print(ans)
 }
 
 
