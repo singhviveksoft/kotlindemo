@@ -1,6 +1,6 @@
 package com.demo.kotlindemo
 
-class DataType:DataItem() {
+class DataType {
     var str=""
 
     fun issues(){
@@ -37,10 +37,10 @@ class DataType:DataItem() {
 
 
 
-var i=5  //by default its takes int value. Int 32 bites
-val l:Long=1000000000L //long 64 bites
-val b:Byte=25  /// 8 bites
-val s:Short=6666 //16 bites
-
-val d=3.8887 // by default its take double. 64 bite
-val f:Float=6.6666F // float 32 bites
+//var i=5  //by default its takes int value. Int 32 bites
+//val l:Long=1000000000L //long 64 bites
+//val b:Byte=25  /// 8 bites
+//val s:Short=6666 //16 bites
+//
+//val d=3.8887 // by default its take double. 64 bite
+//val f:Float=6.6666F // float 32 bites

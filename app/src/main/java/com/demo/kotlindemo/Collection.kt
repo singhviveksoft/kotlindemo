@@ -1,70 +1,124 @@
 package com.demo.kotlindemo
 
-fun main(){
+fun main() {
 
-    var nos=7
-val ans=nos.aracthematic(8)
-println(ans)
-
-    var dataItem=DataItem()
-    dataItem.item1="vivek "
-    dataItem.item2="singh"
- val result=   dataItem.initailize()
-println(result)
-
+//    var nos=7
+//val ans=nos.add(8)
+//    var a1:Int=7
+//    7.add(5)
+//println(ans)
+//
+//    var dataItem=DataItem()
+//    dataItem.item1="vivek "
+//    dataItem.item2="singh"
+// val result=   dataItem.appendItem()
+//println(result)
+//
 //    var strArray=Array(5)
 //    {i -> (i * i).toString()}
 //    strArray.forEach {
 //        println(it)
 //    }
-//  print(  desc(6L))
+
 //}
-//fun desc(any: Any):String{
-//    return when (any) {
-//        i -> "hello"
-//       !is Long -> "hi"
-//        else -> "unknow"
+
+
+//    fun desc(any: Any) :String{
+//        return when (any) {
+//            is Int -> "hello"
+//            !is Long -> "hi"
+//            else -> "unknown"
+//        }
+//    }
+//        print(desc(1))
+
+
+        //list ------------------------------------------
+
+//    val listitem= listOf(5, 6, 7, 10, "ttttt")
 //
+//    listitem.forEach { println(it) }
+//
+//    for (index in listitem.indices) println("index is $index : ${listitem[index]}")
+//
+//
+//    val mutableListitem= mutableListOf<String>()
+//
+//
+//    mutableListitem.add("singh")
+//    mutableListitem.add(0,"hello")
+//    mutableListitem.add(1,"vivek")
+//
+//    println(mutableListitem)
+
+        // set-----------------------------------------------
+
+
+//    val item= setOf(1,2,3,4,56,"yyy",7,8,9,9,null)
+//    println(item)
+//
+    val setItem= mutableSetOf<Int>()
+    setItem.add(5)
+    setItem.add(10)
+    setItem.add(5)
+//    println(setItem)
+//
+
+    when{
+        10 in setItem-> print("vivek")
+        9 in setItem-> "hello"
+
+    }
+//    print(setResult)
+
+
+// map ------------------------------------------------------
+
+//  var mapList=  mapOf("1a" to "ggg", "2b" to 5, "ff" to "ffff")
+//
+//println(mapList["2b"])
+//    println(mapList)
+//    for ((k,v)in mapList) println("$k : $v")
+//
+//    val mutableMapList= mutableMapOf("1" to "vivek", "2" to "singh")
+//    mutableMapList["1"]="raj"
+//
+//    mutableMapList.forEach { (s, s2) ->
+//        println("$s : $s2")
 //    }
 
-//    val item= setOf(1,2,3,4,56,"yyy",7,8,9)
-//    when{
-//      11 in item ->print(message = "hell0")
-//
-//        10 in item -> print("hi")
-//        "yyy" in item -> print("hi6")
-//        -21.8 in item -> print("hi9")
-//        else -> print("unknown")
-//    }
-//
-//    nullCheck(1)
-  //  sun(1,8)
 
-//  var mapList=  mutableMapOf("1a" to 1, "2b" to 2)
-//    mapList["1a"]=3
-//    for ((k,v)in mapList) println(v)
-//
+// lazy ----------------------------------
+
+
 //    val str  :String by lazy {
 //        print("hello1")
 //        print("hello2")
 //        "bye"
 //
 //    }
+//
+//    println(str)
+//    println(str)
+//
+//    checkInput(0)
 
- //   println(str)
- //   println(str)
-
-}
-
-
-fun nullCheck(any: Any) {
-    if (any is String) {
-        println("hello vivek")
-    } else if (any is Char){
-     print("singh")
     }
-}
 
-fun sun(a:Int,b:Int) = println(a+b)
+
+    fun checkInput(any: Any) {
+        if (any is String) {
+            println("hello vivek")
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 

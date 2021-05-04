@@ -1,62 +1,69 @@
 package com.demo.kotlindemo
 
+import java.util.*
+
 fun main(){
     //String manipulation working
 
-    val str= listOf("aaa","bbbbb","ccccc","null","null",1,null)
+//    val str= listOf("aaa","bbbbb","ccccc")
 //   val itemStr :List<String> = str.map {
-//        it.reversed()
+//        it.plus(DataItem(email = "vivek.neodoft@wbmail",name = "vivek"))
 //
 //    }
-
 
 
  //   print(itemStr)
-    val string = "kotlin"
-    for (i in str) {
-        println(i)
+
+
+//    val strItemWithNull= listOf("cup","tea",null)
+//
+//    val strItem  = strItemWithNull.mapNotNull {
+//        it
+//    }
+//    print(strItem)
+
+
+
+
+
+
+//    val string = " kotlin"
+//    for (i in string) {
+//        println(i)
+//    }
+//    val listOfNos= listOf<String>("one","two","three")
+//    listOfNos.forEach { println(it) }
+//
+//    println(listOfNos.reversed())
+
+//
+
+    val name="vivek"
+val myName= buildString {
+    repeat(5){
+        append("hi ")
+        append(name)
+
+                .appendLine("!")
     }
-   // println(string.map { it.uppercaseChar() }) // [K, O, T, L, I, N]
+}
 
-//    var str="""
-//        vivek
-//        singh
-//        software
-//    """.trimIndent()
-//    println(str.removePrefix("#"))
-//    val name="vivek"
-//val myString= buildString {
-//    repeat(5){
-//        append("hi ")
-//        append(name)
-//
-//                .appendLine("!")
-//    }
-//}
+    println(myName)
 
-//
-//    val blankString=" "
-// val blankStringDefault=   blankString.ifBlank {
-//        "blank string with default value \n"
-//    }
-//
-//val emptyString=""
-//    val emptyStringDefault=emptyString.ifEmpty {
-//        "empty string with default value"
-//    }
-//    print(blankStringDefault)
-//    print(emptyStringDefault)
-//    var strArray= listOf("aaaa","bbbb","cccc")
-//    for (c in str) {
-//        print(c+"\n")
-//    }
-//str.forEach {
-//    println(it)
-//}
 
-//println(str[0])
-  // print( str.plus(9))
- //  print( str.reversed())
+
+    val blankString=" "
+ val blankStringDefault=   blankString.ifBlank {
+        "blank string  \n"
+    }
+
+val emptyString=""
+    val emptyStringDefault=emptyString.ifEmpty {
+        "empty string "
+    }
+    print(blankStringDefault)
+    print(emptyStringDefault)
+
 
 }
 

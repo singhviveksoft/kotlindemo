@@ -1,10 +1,12 @@
 package com.demo.kotlindemo
 
-open class DataItem {
+ class DataItem(var name: String, var email: String) {
     // declaring class as open to inherit it property
-    var item1:String?=null
-    var item2:String?=null
+//    var item1:String?=name
+//    var item2:String?=email
 
 
-
+    override fun toString(): String {
+        return " name= $name email= $email"
+    }
 }
