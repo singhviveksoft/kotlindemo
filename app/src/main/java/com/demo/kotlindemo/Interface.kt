@@ -4,32 +4,34 @@ fun main(){
     val obj=Car()
 
 
-    obj.sum(1)
+   print( obj.sum(1))
     obj.alert()
-   obj.count=7
+ println(obj.count)
     obj.alert()
 }
 
 interface Tata{
     var count :Int
     fun sum(a:Int,b:Int=10): Int
-    fun alert() :String{
-      return  "Add by default"
+    fun alert() {
+       print( "Add by  tata default")
     }
 
 }
 
 class Car :Tata{
-    override var count: Int=0
+    override var count: Int
+        get() = 5
+        set(value) {}
 
 
 
     override fun sum(a: Int, b: Int) :Int{
     return  a.plus(b)
     }
-    override fun alert() :String{
+    override fun alert() {
         super.alert()
-       return "new alert ${count.plus(1)}"
+       println( "new alert ${count.plus(1)}")
     }
 
 
