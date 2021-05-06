@@ -24,6 +24,9 @@ interface FirstName{
 
 interface LastName{
     val lName:String
+
+   
+
     fun alert() {
         println("last name default $lName")
     }
