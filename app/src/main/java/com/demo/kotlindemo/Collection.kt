@@ -74,18 +74,18 @@ fun main() {
 
 // map ------------------------------------------------------
 
-//  var mapList=  mapOf("1a" to "ggg", "2b" to 5, "ff" to "ffff")
+  var mapList=  mapOf("1a" to "ggg", "2b" to 5, "ff" to "ffff")
+
+println(mapList["2b"])
+    println(mapList)
+    for ((k,v)in mapList) println("$k : $v")
 //
-//println(mapList["2b"])
-//    println(mapList)
-//    for ((k,v)in mapList) println("$k : $v")
-//
-//    val mutableMapList= mutableMapOf("1" to "vivek", "2" to "singh")
-//    mutableMapList["1"]="raj"
-//
-//    mutableMapList.forEach { (s, s2) ->
-//        println("$s : $s2")
-//    }
+    val mutableMapList= mutableMapOf("1" to "vivek", "2" to "singh",1 to "hhhh")
+    mutableMapList["1"]="raj"
+
+    mutableMapList.forEach { (s, s2) ->
+        println("$s : $s2")
+    }
 
 
 // lazy ----------------------------------

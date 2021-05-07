@@ -8,22 +8,26 @@ fun main(){
 
   //  println(a1.size)
 
-    val array=IntArray(5){
-        it
-    }
-    array.forEach { println(it) }
- val arrayItem=Array(5) { it * 2 }
-
-    arrayItem.forEach {
-
-        println(it)
-    }
+//    val array=IntArray(5){
+//        it
+//    }
+//    array.forEach { print(it) }
+// val arrayItem=Array(5) { it * 2 }
+//
+//    arrayItem.forEach {
+//
+//        println(it)
+//    }
 
 //-------------------------
 
+
+
+
 val stringArray:Array<String> = arrayOf("5","6")
+
     val outputArray=stringArray.map {
-        it.plus(5)
+        it.plus("8")
 
     }
 
@@ -50,7 +54,6 @@ val stringArray:Array<String> = arrayOf("5","6")
 //  }
 
 //-------------------------------
-
 
 
 

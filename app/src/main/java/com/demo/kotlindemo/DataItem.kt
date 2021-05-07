@@ -13,6 +13,8 @@ companion object{
         }
 }
 
+
+
     override fun toString(): String {
         return " name= $name email= $email"
     }
@@ -22,4 +24,6 @@ companion object{
 fun main(){
 
     DataItem.name()
+
+
 }

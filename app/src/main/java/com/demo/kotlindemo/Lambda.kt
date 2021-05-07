@@ -48,14 +48,14 @@ fun main(){
 //        val dataObject=DataItem("raj"," raj@neosoft")
 //    println(dataItemLambda(dataObject))
 //
-//    val list= listOf<Int>(1,2,3,4,5,6,7,8)
+    val list= listOf<Int>(1,2,3,4,5,6,7,8)
 //    println(list)
-//    val result=list.filter {
-//        it % 2==0
-//    }
-//    println(result)
+    val result=list.filter {
+        it % 2==0
+    }
+    println(result)
 //
-//    val userList= listOf<User>(
+//    val userList= mutableListOf<User>(
 //        User("1","vivek"),
 //        User("2","singh")
 //    )
@@ -63,6 +63,8 @@ fun main(){
 //       userList.filter {
 //       it.id=="2"
 //   })
+
+
 //    var adminList=userList.map {
 //        Admin(it.id,it.name)
 //    }
