@@ -5,17 +5,17 @@ import java.util.*
 fun main(){
     //String manipulation working
 
-//    val str= listOf("aaa","bbbbb","ccccc")
-//   val itemStr :List<String> = str.map {
-//        it.plus(DataItem(email = "vivek.neodoft@wbmail",name = "vivek"))
-//
-//    }
+    val str= listOf("aaa","bbbbb","ccccc")
+   val itemStr :List<String> = str.map {
+        it.plus(DataItem(email = "vivek.neodoft@wbmail",name = "vivek"))
+
+    }
 
 
- //   print(itemStr)
+    print(itemStr)
 
 
-//    val strItemWithNull= listOf("cup","tea",null)
+   val strItemWithNull= listOf("cup","tea",null)
 //
 //    val strItem  = strItemWithNull.mapNotNull {
 //        it
@@ -23,7 +23,8 @@ fun main(){
 //    print(strItem)
 
 
-
+  println(  strItemWithNull.last())
+  println(  strItemWithNull.first())
 
 
 
@@ -31,20 +32,26 @@ fun main(){
 //    for (i in string) {
 //        println(i)
 //    }
-//    val listOfNos= listOf<String>("one","two","three")
-//    listOfNos.forEach { println(it) }
-//
-//    println(listOfNos.reversed())
+    val listOfNos= listOf<String>("one","two","three")
+    listOfNos.forEach { println(it) }
+
+    println(listOfNos.reversed())
 
 //
 
     val name="vivek"
 val myName= buildString {
     repeat(5){
-        append("hi ")
+        append("hi")
+        append("hello")
         append(name)
 
-                .appendLine("!")
+        append("\n")
+
+
+
+
+
     }
 }
 

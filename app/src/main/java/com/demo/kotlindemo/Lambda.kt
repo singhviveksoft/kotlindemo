@@ -33,8 +33,8 @@ fun main(){
 //    val lambda:Int.(Int)->Int={
 //        this+it
 //    }
-
-  //  println(1.lambda(1))
+//
+//    println(1.lambda(1))
 
 //    val lambda2 : String.(Boolean)->String={
 //        this+it
@@ -42,18 +42,18 @@ fun main(){
 
  //   println("Vivek".lambda2(true))
 
-//    val dataItemLambda :(DataItem) -> String={
-//        it.name.plus(it.email)
-//    }
+    val dataItemLambda :(DataItem) -> String={
+        it.name.plus(it.email)
+    }
 //        val dataObject=DataItem("raj"," raj@neosoft")
 //    println(dataItemLambda(dataObject))
-//
-    val list= listOf<Int>(1,2,3,4,5,6,7,8)
-//    println(list)
-    val result=list.filter {
-        it % 2==0
-    }
-    println(result)
+////
+//    val list= listOf<Int>(1,2,3,4,5,6,7,8)
+////    println(list)
+//    val result=list.filter {
+//        it % 2==0
+//    }
+//    println(result)
 //
 //    val userList= mutableListOf<User>(
 //        User("1","vivek"),
@@ -72,6 +72,7 @@ fun main(){
 //    print(adminList)
 
 //print(addAdmin()("5","vivek"))
+
 }
 
 
@@ -85,7 +86,6 @@ fun addUserNamer(fname : String, lname:String, addString: (String,String)->Strin
 val addString:(String,String)->String={
     a, b -> "my name is $a and surname is $b"
 }
-
 fun add(x:Int,y:Int)=x+y
 
 

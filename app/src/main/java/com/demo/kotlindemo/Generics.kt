@@ -12,23 +12,26 @@ class Generics<T>(val value:T?=null, val list: List<T>?=null){
 
         }
 
-print(item)
+println(item)
+println(list)
+println(value)
     }
 
 
 }
 
 fun main(){
-   Generics( listOf(1,3,4,56,7,8,"dddddd")).list()
-   Generics("lllll").itemLenth()
-
-    val listOfDataItem:List<DataItem> = listOf(
-            DataItem("avinash","av@gmail.com"),
-            DataItem("rajan","ra@gmail.com"),
-            DataItem("vivek","vigmail.com"),
-            DataItem("raj","rjgmail.com")
-
-    )
-
-   Generics(list=listOfDataItem).list()
+   Generics(list =  listOf(1,3,4,56,7,8,"dddddd")).list()
+//   Generics("lllll").itemLenth()
+//
+//    val listOfDataItem:List<DataItem> = listOf(
+//            DataItem("avinash","av@gmail.com"),
+//            DataItem("rajan","ra@gmail.com"),
+//            DataItem("vivek","vigmail.com"),
+//            DataItem("raj","rjgmail.com")
+//
+//    )
+//
+//   Generics(list=listOfDataItem).list()
+//    Generics<Int>()
 }

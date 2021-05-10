@@ -54,9 +54,9 @@ fun main() {
         // set-----------------------------------------------
 
 
-    val item= setOf(1,2,3,4,56,"yyy",7,8,9,9,null)
-    println(item)
-//
+//    val item= setOf(1,2,3,4,56,"yyy",7,8,9,9,null)
+//    println(item)
+////
 //    val setItem= mutableSetOf<Int>()
 //    setItem.add(5)
 //    setItem.add(10)
@@ -74,32 +74,32 @@ fun main() {
 
 // map ------------------------------------------------------
 
-  var mapList=  mapOf("1a" to "ggg", "2b" to 5, "ff" to "ffff")
-
-println(mapList["2b"])
-    println(mapList)
-    for ((k,v)in mapList) println("$k : $v")
+//  var mapList=  mapOf("1a" to "ggg", "2b" to 5, "ff" to "ffff")
 //
-    val mutableMapList= mutableMapOf("1" to "vivek", "2" to "singh",1 to "hhhh")
-    mutableMapList["1"]="raj"
-
-    mutableMapList.forEach { (s, s2) ->
-        println("$s : $s2")
-    }
+//println(mapList["2b"])
+//    println(mapList)
+//    for ((k,v)in mapList) println("$k : $v")
+////
+//    val mutableMapList= mutableMapOf("1" to "vivek", "2" to "singh",1 to "hhhh")
+//    mutableMapList["1"]="raj"
+//
+//    mutableMapList.forEach { (s, s2) ->
+//        println("$s : $s2")
+//    }
 
 
 // lazy ----------------------------------
 
 
-//    val str  :String by lazy {
-//        print("hello1")
-//        print("hello2")
-//        "bye"
-//
-//    }
-//
-//    println(str)
-//    println(str)
+    val str  :String by lazy {
+        println("hello1")
+        println("hello2")
+        "bye"
+
+    }
+
+    println(str)
+   // println(str)    // second time calling lazy val to see catch value.
 //
 //    checkInput(0)
 

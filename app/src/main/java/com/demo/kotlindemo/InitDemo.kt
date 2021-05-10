@@ -1,12 +1,19 @@
 package com.demo.kotlindemo
 
-class InitOrderDemo(name: String) {
-  //  lateinit var nos:Int  // not allow for primitive data type
+class InitOrderDemo( name: String) {
+  //  lateinit var nos:Int  // not allow for primitive data type and not allowed in constructor
     lateinit var firstProperty: String
+val id :DataItem by lazy { // can not use with var
+
+  println("my name is")
+    DataItem(name= "raj")
+
+}
 
 
     fun lateCheck(){
-        if (this::firstProperty.isInitialized) print("lateinit initialized")
+
+        if (::firstProperty.isInitialized) print("lateinit initialized")
      else  print("lateinit not be initialized")
     }
    // val firstProperty = "First property: $name"
@@ -18,12 +25,12 @@ class InitOrderDemo(name: String) {
 
 
 
-    val secondProperty = "Second property: ${name.length}"
+    var secondProperty = "Second property: ${name.length}"
 
     init {
         println("Second initializer block that prints ${name.length}")
     }
-    constructor(name: String,id:String):this(name)
+    constructor(name: String,id:String,):this(name)
     {
         print("name: $name id: $id")
 
@@ -36,7 +43,7 @@ class InitDemo {
     var name:String
 
 
-    constructor(name: String,gender:String){
+    constructor(name: String,gender:String){            //var and val ard not allowed in sec. condstr.
        this.name=name
     }
 
@@ -47,7 +54,9 @@ class InitDemo {
 
 fun main() {
    var initObj= InitOrderDemo("hello")
-    initObj.lateCheck()
+ //   initObj.lateCheck()
+    println(initObj.id)
+    println(initObj.id)
  //   InitOrderDemo("vello","5326")
  //  var obj= InitDemo("vivek","men")
  //   print(obj)

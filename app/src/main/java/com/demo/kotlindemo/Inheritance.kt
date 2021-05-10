@@ -41,7 +41,7 @@ class MobileDeveCompany:SoftwareEngineer{
 
     override fun deveName() {
         super.deveName()
-        println("child developer name: $name")
+        println("mob developer name: $name")
     }
 
 
