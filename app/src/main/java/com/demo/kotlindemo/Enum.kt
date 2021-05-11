@@ -1,16 +1,17 @@
 package com.demo.kotlindemo
-
+// u cannot inheritance class and abstract class but interface and abstract method are allowed
+// by default enum class are abstract by nature
 enum class Enum{
     January,Feb,March
 }
+
 // enum class with initialize with constr
 // i.e assiging default value fro object constant since each member
 // of enum class is a object (instance of enum class)
-
 enum class CardType(var color:String){
     Silver("gray"),Gold("yellow"),Platinum("black")
 }
-enum class DAYS{                            // enum class without constr.
+enum  class DAYS{                            // enum class without constr.
     SUNDAY,
     MONDAY,
     TUESDAY,

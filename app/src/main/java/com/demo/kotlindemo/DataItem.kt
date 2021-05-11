@@ -7,7 +7,6 @@ package com.demo.kotlindemo
 
 companion object{
     var id=1
-
         fun name() {
             print("hello")
         }

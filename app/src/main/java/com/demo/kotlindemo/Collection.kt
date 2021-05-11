@@ -1,11 +1,12 @@
 package com.demo.kotlindemo
 
 fun main() {
+    println(companyName)
 
 //    var nos=7
 //val ans=nos.add(8)
 //    var a1:Int=7
-//    7.add(5)
+  7.add(5)
 //println(ans)
 //
 //    var dataItem=DataItem()
