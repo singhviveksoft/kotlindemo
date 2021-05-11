@@ -1,7 +1,6 @@
 package com.demo.kotlindemo
 
 fun main() {
-    println(companyName)
 
 //    var nos=7
 //val ans=nos.add(8)
