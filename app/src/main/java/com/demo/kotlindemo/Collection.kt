@@ -5,7 +5,7 @@ fun main() {
 //    var nos=7
 //val ans=nos.add(8)
 //    var a1:Int=7
-  7.add(5)
+//  7.add(5)
 //println(ans)
 //
 //    var dataItem=DataItem()
@@ -14,8 +14,8 @@ fun main() {
 // val result=   dataItem.appendItem()
 //println(result)
 //
-//    var strArray=Array(5)
-//    {i -> (i * i).toString()}
+    var strArray=Array(5)
+   {i -> (i * i).toString()}
 //    strArray.forEach {
 //        println(it)
 //    }
@@ -66,10 +66,10 @@ fun main() {
 //
 //    when{
 //        10 in setItem-> print("vivek")
-//        9 in setItem-> "hello"
+//        9 in setItem-> print("hello")
 //
 //    }
-//    print(setResult)
+
 
 
 // map ------------------------------------------------------

@@ -1,7 +1,7 @@
 package com.demo.kotlindemo
 
 // we can also create anonymous without extending class and interface
-// object keyward to create anaonymous innerinner class
+
 // comstructor are not allowed in singleton or object expression i.e anonymous inner class
 
 open class University{
