@@ -30,6 +30,8 @@ class Derived(i:Delegation)  :Delegation by i     // eagle baby
 /*delegated property
     * */
 class DelegationProperty{
+
+
     var currentCount=0
     operator fun getValue(thisRef: Any?, property: KProperty<*>): Int {
         return currentCount

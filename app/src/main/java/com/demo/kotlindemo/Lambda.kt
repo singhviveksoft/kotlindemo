@@ -1,13 +1,13 @@
 package com.demo.kotlindemo
 
 fun main(){
-//    val square : (Int) -> Int={
-//        number -> number*number
-//    }
-//
+    val square : (Int) -> Int={
+        number -> number*number
+    }
 
-//
-//    println(square(5))
+
+
+    println(square(5))
 
 //    var add : (Int,Int) -> Int={
 //            a,b->a+b
@@ -41,7 +41,11 @@ fun main(){
 //    }
 
  //   println("Vivek".lambda2(true))
+val i:()->String={
+    "hello"
 
+}
+    println(i())
     val dataItemLambda :(DataItem) -> String={
         it.name.plus(it.email)
     }
