@@ -22,7 +22,7 @@ fun main() {
 
 //}
 
-
+//var a= MutableList<Int>()
 //    fun desc(any: Any) :String{
 //        return when (any) {
 //            is Int -> "hello"

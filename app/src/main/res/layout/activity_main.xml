@@ -6,6 +6,9 @@
     <variable
         name="viewModel"
         type="com.demo.kotlindemo.activity.MainViewModel" />
+    <variable
+        name="activity"
+        type="com.demo.kotlindemo.activity.MainActivity" />
 </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,6 +34,7 @@
             android:layout_width="107dp"
             android:layout_height="45dp"
             android:text="Button"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,9 +56,21 @@
             android:layout_height="39dp"
             android:layout_marginTop="92dp"
             android:text="Button"
+            android:onClick="@{()->activity.mainMethod()}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            app:imgUrl="@{viewModel.imagePath}"
+            app:layout_constraintEnd_toEndOf="@+id/countButton"
+            app:layout_constraintStart_toStartOf="@+id/countButton"
+            app:layout_constraintTop_toBottomOf="@+id/countButton"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

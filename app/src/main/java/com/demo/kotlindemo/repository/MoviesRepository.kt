@@ -1,4 +1,8 @@
 package com.demo.kotlindemo.repository
 
-class MoviesRepository {
+import com.demo.kotlindemo.`interface`.Api
+
+class MoviesRepository(val api:Api) {
+  fun getMovie()=  api.getMovie()
+
 }

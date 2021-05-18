@@ -9,7 +9,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MainViewModel(startingValue:Int):ViewModel() {
+class MainViewModel(startingValue:Int):ViewModel(){
+    var imagePath="https://image.shutterstock.com/image-photo/mountain-landscape-hiking-trail-view-600w-1071252569.jpg"
  private   var total=MutableLiveData<Int>()
      val totalData:LiveData<Int>
     get() = total
@@ -19,8 +20,5 @@ class MainViewModel(startingValue:Int):ViewModel() {
    fun settotal(nos:Int){
        total.value=total.value?.plus(nos)
     }
-    @BindingAdapter("app:imgUrl")
-fun imgUrl(view:View,string: String){
 
-}
 }

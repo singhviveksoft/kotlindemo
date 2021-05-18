@@ -21,9 +21,11 @@ lateinit var   binding: ActivityMainBinding
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         modelFactory = MainViewModelFactory(125)
         model = ViewModelProvider(this, modelFactory).get(MainViewModel::class.java)
-        binding.lifecycleOwner = this
+
 
         binding.viewModel = model
+        binding.activity=this
+        binding.lifecycleOwner = this
         //   binding.countTxt.text=model.gettotal().toString()
 //        model.totalData.observe(this, Observer {
 //            binding.countTxt.text=it.toString()
@@ -36,10 +38,13 @@ lateinit var   binding: ActivityMainBinding
 //         //   binding.countTxt.text=model.gettotal().toString()
         }
 
-        binding.countButton.setOnClickListener {
-            val intent = Intent(this, CountActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.countButton.setOnClickListener {
+////            val intent = Intent(this, CountActivity::class.java)
+////            startActivity(intent)
+//            mainMethod()
+//        }
     }
-
+fun mainMethod(){
+    Toast.makeText(this,"hello main Method",Toast.LENGTH_LONG).show()
+}
 }
