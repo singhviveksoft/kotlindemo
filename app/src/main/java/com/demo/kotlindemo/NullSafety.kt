@@ -5,9 +5,11 @@ package com.demo.kotlindemo
 fun main(){
     var a:String?=null
     var b:String?=null
+    val c=null
     a="hello"
     println(a)
     println(b?.length)
+    println(c)
 
 
     val items= listOf<String?>(null,"kotlin",null)

@@ -1,6 +1,6 @@
 package com.demo.kotlindemo
 
-data class PersonData(val name:String, val age:String= "27",override var fName: String ,override val lName: String): FirstName,LastName{
+ class PersonData(val name:String, val age:String= "27",override var fName: String ,override val lName: String): FirstName,LastName{
 
 
 
@@ -40,8 +40,8 @@ fun main(){
 
 
     println(personData.name)
-    println(personData.component1())
-    println(personData.component2())
+//  //  println(personData.component1())
+ //   println(personData.component2())
 //
 //    val (Name,age)=PersonData("vivek","28")
 //    println(Name)
